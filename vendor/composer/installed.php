@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '9080e4a2191c1f1c4490fc87b87f13a647e62b40',
+        'reference' => '29eb01e3bd6c5f8461153b05548bd2e93e25617a',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '9080e4a2191c1f1c4490fc87b87f13a647e62b40',
+            'reference' => '29eb01e3bd6c5f8461153b05548bd2e93e25617a',
             'dev_requirement' => false,
         ),
         'behat/gherkin' => array(
@@ -73,6 +73,15 @@
             'reference' => '770a6be4160a5c0c08d100dd51bff35f6056bbf1',
             'dev_requirement' => true,
         ),
+        'codeception/module-webdriver' => array(
+            'pretty_version' => '2.0.1',
+            'version' => '2.0.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../codeception/module-webdriver',
+            'aliases' => array(),
+            'reference' => 'dbfb2621486401d9c70bd609b3d75a863d092b95',
+            'dev_requirement' => true,
+        ),
         'codeception/phpunit-wrapper' => array(
             'pretty_version' => '9.0.6',
             'version' => '9.0.6.0',
@@ -99,6 +108,12 @@
             'aliases' => array(),
             'reference' => 'd56bf6102915de5702778fe20f2de3b2fe570b5b',
             'dev_requirement' => true,
+        ),
+        'facebook/webdriver' => array(
+            'dev_requirement' => true,
+            'replaced' => array(
+                0 => '*',
+            ),
         ),
         'guzzlehttp/guzzle' => array(
             'pretty_version' => '7.4.1',
@@ -164,6 +179,15 @@
             'install_path' => __DIR__ . '/../phar-io/version',
             'aliases' => array(),
             'reference' => 'bae7c545bef187884426f042434e561ab1ddb182',
+            'dev_requirement' => true,
+        ),
+        'php-webdriver/webdriver' => array(
+            'pretty_version' => '1.12.0',
+            'version' => '1.12.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../php-webdriver/webdriver',
+            'aliases' => array(),
+            'reference' => '99d4856ed7dffcdf6a52eccd6551e83d8d557ceb',
             'dev_requirement' => true,
         ),
         'phpdocumentor/reflection-common' => array(
@@ -614,6 +638,15 @@
             'install_path' => __DIR__ . '/../symfony/polyfill-php80',
             'aliases' => array(),
             'reference' => '57b712b08eddb97c762a8caa32c84e037892d2e9',
+            'dev_requirement' => true,
+        ),
+        'symfony/process' => array(
+            'pretty_version' => 'v6.0.2',
+            'version' => '6.0.2.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/process',
+            'aliases' => array(),
+            'reference' => '71da2b7f3fdba460fcf61a97c8d3d14bbf3391ad',
             'dev_requirement' => true,
         ),
         'symfony/service-contracts' => array(
