@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'af489e4faa3f675e3df1d2db12af7dbe2570cede',
+        'reference' => 'ec7f03d308eb28feb5e5953b2c0af829f97925c6',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'af489e4faa3f675e3df1d2db12af7dbe2570cede',
+            'reference' => 'ec7f03d308eb28feb5e5953b2c0af829f97925c6',
             'dev_requirement' => false,
         ),
         'behat/gherkin' => array(
@@ -114,6 +114,15 @@
             'replaced' => array(
                 0 => '*',
             ),
+        ),
+        'fzaninotto/faker' => array(
+            'pretty_version' => 'v1.5.0',
+            'version' => '1.5.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../fzaninotto/faker',
+            'aliases' => array(),
+            'reference' => 'd0190b156bcca848d401fb80f31f504f37141c8d',
+            'dev_requirement' => false,
         ),
         'guzzlehttp/guzzle' => array(
             'pretty_version' => '7.4.1',
