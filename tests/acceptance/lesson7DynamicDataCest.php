@@ -42,11 +42,8 @@ class lesson7DynamicDataCest
         $I->fillField(lesson7DYnamicData::$cardLastName,$cardLastName);
         $I->fillField(lesson7DYnamicData::$cardNumber,$cardNumber);
         $I->fillField(lesson7DYnamicData::$cardSecurity,$cardSecurity);
-        $I->wait(100);
-
         $I->click(lesson7DYnamicData::$registerButton);
-        $I->wait(100);
-
+        $I->waitForText('Good job');
 
     }
 
