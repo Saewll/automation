@@ -17,9 +17,9 @@ class lesson7HabrCest
         
 
         $I->amOnPage(lesson7Habr::$URL);
-        $I->click(sprintf(lesson7Habr::$categories,array_rand($data['category'])));
-        $I->waitForElementVisible(sprintf(lesson7Habr::$categoryHeader,array_rand($data['category'])));
-        $I->seeInCurrentUrl(sprintf(array_rand($data['category_url'])));
+        $I->click(sprintf(lesson7Habr::$categories,$data['category']));
+        $I->waitForElementVisible(sprintf(lesson7Habr::$categoryHeader,$data['category']));
+        $I->seeInCurrentUrl(sprintf($data['category_url']));
 
 
 
@@ -29,7 +29,9 @@ class lesson7HabrCest
     }
     protected function dataForCategory(){
 
-        return [
+
+
+             $arr=[
             ['category'=>'Все потоки','category_url'=>'all'],
             ['category'=>'Разработка','category_url'=>'develop'],
             ['category'=>'Администрирование','category_url'=>'admin'],
@@ -40,6 +42,10 @@ class lesson7HabrCest
 
 
         ];
+        
+        return $arr;
+
     }
 
-}
+    }
+
