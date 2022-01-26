@@ -7,8 +7,16 @@
 
 actor: FunctionalTester
 modules:
-    enabled:
-         - PhpBrowser:
-            url: http://automationpractice.com/index.php 
+      enabled:
+         - PhpBrowser
          - \Helper\Functional
-    step_decorators: ~        
+         - \Helper\BaseHelper
+         - REST:
+            depends: PhpBrowser
+            url: 'http://'
+      config:
+         PhpBrowser:
+            url: ''
+            headers:
+               Content-Type: application/json
+      step_decorators: ~        
