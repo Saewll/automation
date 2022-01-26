@@ -13,10 +13,10 @@ modules:
          - \Helper\BaseHelper
          - REST:
             depends: PhpBrowser
-            url: 'http://'
+            url: 'https://reqres.in/api/'
       config:
          PhpBrowser:
-            url: ''
+            url: 'https://reqres.in/api/'
             headers:
                Content-Type: application/json
       step_decorators: ~        
