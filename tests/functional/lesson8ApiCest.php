@@ -1,9 +1,11 @@
 <?php
 
+use Codeception\Example;
 use Helper\Functional;
 
 class ArticlePageCest
 {
+     
     
     // tests
     public function checkPostMethod(FunctionalTester $I)
@@ -41,6 +43,64 @@ class ArticlePageCest
 
 
     }
+    /**
+     * @dataProvider cases
+     * @param Example $data
+     */
+    public function negativeCheck(FunctionalTester $I,Example $data){
+        $name=$I->getFaker()->name;
+        $job=$I->getFaker()->company;
+        $I->sendPost('users',[$data['name'] ? $name : null,$data['job'] ? $job :null]);
+
+
+        
+    }
+
+    /**
+     * @dataProvider cases
+     * @param Example $data
+     */
+    public function checkPutMethod(FunctionalTester $I,Example $data){
+        $name=$I->getFaker()->name;
+        $job=$I->getFaker()->company;
+        $I->sendPut('users/2',[$name,$job]);
+        $I->seeResponseMatchesJsonType([
+            'updatedAt'=>'string'
+        ]);
+        $I->sendGet('users/2',['name'=>$name,'job'=>$job]);
+        $I->canSeeResponseCodeIs('200');
+        $I->sendDelete('users/2',['name'=>$name,'job'=>$job]);
+        $I->canSeeResponseCodeIs('204');
+
+        
+        
+
+    }
+
+ 
+        
+        
+
+    
+
+
+    protected function cases(){
+
+        return [
+            [
+                'name'=>true,
+                'job'=>false
+                
+            ],
+            [
+                'name'=>false,
+                'job'=>true
+            ]
+            ];
+    }
+
+
+  
 
 
 }
