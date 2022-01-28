@@ -5,7 +5,7 @@ use Helper\Functional;
 class ArticlePageCest
 {
     
-    // tests
+    // Тест на проверку количетсва товаров по запросу
     public function checkArticlePageList(FunctionalTester $I)
     {
     $clickSearchFIeldCss='#search_query_top';

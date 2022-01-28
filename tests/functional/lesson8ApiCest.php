@@ -7,7 +7,7 @@ class ArticlePageCest
 {
      
     
-    // tests
+    // Тест на проверку метода пост позитивный
     public function checkPostMethod(FunctionalTester $I)
     {
     $defaultSchema=['data'=>[
@@ -44,6 +44,7 @@ class ArticlePageCest
 
     }
     /**
+     * Негативный тест на проверку пост метода без имени или компании
      * @dataProvider cases
      * @param Example $data
      */
@@ -57,6 +58,7 @@ class ArticlePageCest
     }
 
     /**
+     * Тест пут метода
      * @dataProvider cases
      * @param Example $data
      */

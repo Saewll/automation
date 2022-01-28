@@ -8,7 +8,7 @@ class lesson7DynamicDataCest
 {
    
 
-    // tests
+    // Тест на заполнение данных карты и успешной оплаты
     public function fillCard(AcceptanceTester $I)
     {
        

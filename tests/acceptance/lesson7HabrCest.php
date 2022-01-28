@@ -8,6 +8,7 @@ class lesson7HabrCest
    
 
     /**
+     * Тест на проверку соответствия названия категории с урлом
      * @param Example $data
      * @dataProvider dataForCategory
      */

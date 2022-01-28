@@ -6,7 +6,7 @@ class lesson6PageObjectCest
 {
    
 
-    // tests
+    // Тест на проверку ввода неверного пароля 
     public function failedLogin(AcceptanceTester $I)
     {
         $failedLogin= new lesson6PageObject($I);

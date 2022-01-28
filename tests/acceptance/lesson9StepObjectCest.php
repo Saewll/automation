@@ -9,7 +9,7 @@ class lesson9StepObjectCest
      public static $ADVERTS=10;
        
 
-     // Тест на поиск блузки в модальном окне на сайте
+     // Тест на проверку счетчика избранных
      public function checkSearch(\Step\Acceptance\lesson9StepObjectFavorites $I)
      {
           $I->amOnPage(lesson9StepObjectMainPage::$URL);
