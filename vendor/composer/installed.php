@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '95806172cdccb37ec1ea36854715b99f05848b78',
+        'reference' => '69e27dfdbe68692088764185c270fd0fc730fc4a',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '95806172cdccb37ec1ea36854715b99f05848b78',
+            'reference' => '69e27dfdbe68692088764185c270fd0fc730fc4a',
             'dev_requirement' => false,
         ),
         'behat/gherkin' => array(
@@ -56,12 +56,12 @@
             'dev_requirement' => true,
         ),
         'codeception/module-asserts' => array(
-            'pretty_version' => '1.3.1',
-            'version' => '1.3.1.0',
+            'pretty_version' => '2.0.0',
+            'version' => '2.0.0.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../codeception/module-asserts',
             'aliases' => array(),
-            'reference' => '59374f2fef0cabb9e8ddb53277e85cdca74328de',
+            'reference' => 'ef4a27087b09bf3c3b88fa9025e3179848541a79',
             'dev_requirement' => true,
         ),
         'codeception/module-phpbrowser' => array(

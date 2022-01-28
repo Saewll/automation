@@ -8,7 +8,7 @@ actor: AcceptanceTester
 modules:
     enabled:
         - WebDriver:
-            url: https://habr.com/ru/all
+            url: https://avtoelon.uz/
             host: localhost
             port: 9515
             browser: chrome
@@ -16,5 +16,6 @@ modules:
 
         - \Helper\Acceptance
         - \Helper\BaseHelper
+        - Asserts
 
 step_decorators: ~        
